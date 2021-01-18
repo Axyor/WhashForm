@@ -1,8 +1,10 @@
+
 let client1Elements = document.querySelector(".client1");
 let client2Elements = document.querySelector(".client2");
 let client3Elements = document.querySelector(".client3");
 let client4Elements = document.querySelector(".client4");
 let client5Elements = document.querySelector(".client5");
+
 
 client1Elements.addEventListener("click", (e) => {
     e.preventDefault();
@@ -23,6 +25,8 @@ client2Elements.addEventListener("click", (e) => {
 
 });
 
+
+
 client1Elements.addEventListener("click", () => {
 
     let pElement = document.createElement("p");
@@ -30,10 +34,10 @@ client1Elements.addEventListener("click", () => {
     pElement.id = "JardinsAriana"
     pElement.textContent = "Jardins d'Ariana";
     console.log(pElement);
-    let divElement = document.querySelector("#clientList");
+    let divElement = document.querySelector("#clientName");
     divElement.appendChild(pElement);
 
-    let dElement = document.createElement("p");
+    let dElement = document.createElement("span");
     let date1 = new Date();
     let date = date1.toLocaleString('fr-FR', {
         weekday: 'long',
@@ -58,10 +62,10 @@ client2Elements.addEventListener("click", () => {
     pElement.id = "Livran"
     pElement.textContent = "Jérôme Livran";
     console.log(pElement);
-    let divElement = document.querySelector("#clientList");
+    let divElement = document.querySelector("#clientName");
     divElement.appendChild(pElement);
 
-    let dElement = document.createElement("p");
+    let dElement = document.createElement("span");
     let date1 = new Date();
     let date = date1.toLocaleString('fr-FR', {
         weekday: 'long',
@@ -74,8 +78,8 @@ client2Elements.addEventListener("click", () => {
     });
     dElement.textContent = date;
     console.log(dElement);
-    // let dateElement = document.querySelector("#clientList");
-    divElement.appendChild(dElement);
+    let dateElement = document.querySelector("#dateNow");
+    dateElement.appendChild(dElement);
 
 })
 
@@ -86,10 +90,10 @@ client3Elements.addEventListener("click", () => {
     pElement.id = "Parguey"
     pElement.textContent = "Philippe Parguey";
     console.log(pElement);
-    let divElement = document.querySelector("#clientList");
+    let divElement = document.querySelector("#clientName");
     divElement.appendChild(pElement);
 
-    let dElement = document.createElement("p");
+    let dElement = document.createElement("span");
     let date1 = new Date();
     let date = date1.toLocaleString('fr-FR', {
         weekday: 'long',
@@ -102,8 +106,8 @@ client3Elements.addEventListener("click", () => {
     });
     dElement.textContent = date;
     console.log(dElement);
-    // let dateElement = document.querySelector("#clientList");
-    divElement.appendChild(dElement);
+    let dateElement = document.querySelector("#dateNow");
+    dateElement.appendChild(dElement);
 
 })
 
@@ -114,10 +118,10 @@ client4Elements.addEventListener("click", () => {
     pElement.id = "Archimed"
     pElement.textContent = "Archimed";
     console.log(pElement);
-    let divElement = document.querySelector("#clientList");
+    let divElement = document.querySelector("#clientName");
     divElement.appendChild(pElement);
 
-    let dElement = document.createElement("p");
+    let dElement = document.createElement("span");
     let date1 = new Date();
     let date = date1.toLocaleString('fr-FR', {
         weekday: 'long',
@@ -130,8 +134,8 @@ client4Elements.addEventListener("click", () => {
     });
     dElement.textContent = date;
     console.log(dElement);
-    // let dateElement = document.querySelector("#clientList");
-    divElement.appendChild(dElement);
+    let dateElement = document.querySelector("#dateNow");
+    dateElement.appendChild(dElement);
 
 })
 
@@ -142,10 +146,10 @@ client5Elements.addEventListener("click", () => {
     pElement.id = "BeCom"
     pElement.textContent = "Becom";
     console.log(pElement);
-    let divElement = document.querySelector("#clientList");
+    let divElement = document.querySelector("#clientName");
     divElement.appendChild(pElement);
 
-    let dElement = document.createElement("p");
+    let dElement = document.createElement("span");
     let date1 = new Date();
     let date = date1.toLocaleString('fr-FR', {
         weekday: 'long',
@@ -158,7 +162,11 @@ client5Elements.addEventListener("click", () => {
     });
     dElement.textContent = date;
     console.log(dElement);
-    // let dateElement = document.querySelector("#clientList");
-    divElement.appendChild(dElement);
+    let dateElement = document.querySelector("#dateNow");
+    dateElement.appendChild(dElement);
 
-})
+    
+
+});
+
+

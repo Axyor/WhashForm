@@ -6,29 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean 3000</title>
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 
 <body>
     <header>
-        <img src="/img/logo-clean3000.png" alt="" />
-    </header>
+        <img src="/img/logo-clean3000-mini.png" alt="" />
 
-    <section>
         <h1>Choisissez - Client</h1>
 
         <div>
             <a href="" class="client1">Jardins d'Ariana</a>
-            <a href="client.html" class="client2">Jérôme Livran</a>
-            <a href="client.html" class="client3">Philippe Parguey</a>
-            <a href="client.html" class="client4">Archimed</a>
-            <a href="client.html" class="client5">BeCom</a>
+            <a href="" class="client2">Jérôme Livran</a>
+            <a href="" class="client3">Philippe Parguey</a>
+            <a href="" class="client4">Archimed</a>
+            <a href="" class="client5">BeCom</a>
+
+            <a href="index.html">Editer</a>
+
+
         </div>
-    </section>
-    <section id="clientList">
-        <div></div>
+    </header>
+
+    <section id="AvisP">
+        <h2>Avis de passage</h2>
+        <p>Nom entreprise/ou client:
+        <p id="clientName"></p>
+        </p>
+        <p>Notre technicien est intervenu pour l'entretien de la vitrerie le
+        <p id="dateNow"></p>
+        </p>
+        <p>Merci de votre confiance.</p>
+        <p>Signature du technicien:</p>
+        <textarea name="" id="technSign" cols="30" rows="5"></textarea>
+
+        <p>Signature du client/Cachet de l'entreprise:</p>
+        <textarea name="" id="clientSign" cols="30" rows="5"></textarea>
     </section>
 
-
+    <a onclick="window.print('#AvisP')">Enregistrer votre avis</a>
     <script src="js/main.js"></script>
 </body>
 
