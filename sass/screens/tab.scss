@@ -1,0 +1,115 @@
+@media screen and (min-width: 575px) and (max-width: 990px) {
+    html {
+        font-size: 62.5%;
+        body {
+            margin: 0;
+            font-size: 1.8rem;
+            header {
+                font-size: 2.4rem;
+                .title {
+                    
+                    img {
+                        width: 20rem;
+                    }
+                    .textTitle {
+                        display: flex;
+                        flex-direction: column;
+                        h1 {
+                            align-self: center;
+                            color: #3d3d33;
+                            font-family: 'Lobster Two', cursive;
+                        }
+                        p {
+                            font-size: 2.4rem;
+                            font-family: 'Montserrat', sans-serif;
+                            
+                        }
+                    }
+                }
+
+                h2 {
+                    font-size: 2.8rem;
+                    margin: 2rem 0;
+                    padding: 2rem 0;
+                    text-align: center;
+                    color: white;
+                    background-color: #3d3d33;
+                }
+                #clientsList {
+                    margin: 5rem 0;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    a {
+                        text-align: center;
+                        background-color: #3d3d33;
+                        border-radius: 1rem;
+                        color: white;
+                        text-decoration: none;
+                        margin: 2rem;
+                        padding: 2rem;
+                    }
+                    .edit {
+                        background-color: #5cba47;
+                    }
+                }
+            }
+            #avisP {
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100vh;
+                    padding: 2rem;
+                    background-color: white;
+                    margin-top: auto;
+                    font-size: 1.8rem;
+                    h2 {
+                        font-size: 2.8rem;
+                        margin: 2rem 0;
+                        padding: 2rem 0;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: white;
+                        background-color: #3d3d33;
+                    }
+                    p {
+                        margin: 1rem 0;
+                        font-size: 2.4rem;
+                    }
+                    textarea {
+                        margin: 1rem 0;
+                        resize: none;
+                        outline: none;
+                        font-size: 2rem;
+                    }
+                    #clientName {
+                        font-weight: bold;
+                        margin: 0;
+                    }
+
+                    #dateNow {
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                    .buttons {
+                        margin: 5rem 0;
+                        height: 2rem;
+                        a {
+                            text-align: center;
+                            background-color: #3d3d33;
+                            border-radius: 1rem;
+                            color: white;
+                            text-decoration: none;
+                            margin: 2rem;
+                            padding: 2rem;
+                            font-size: 2.2rem;
+                        }
+                        .edit {
+                            background-color: #5cba47;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

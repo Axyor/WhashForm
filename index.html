@@ -6,45 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean 3000</title>
     <link rel="stylesheet" href="css/main.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="/img/logo-clean3000-mini.png" alt="" />
+        <div class="title">
+            <img src="/img/logo-clean3000-mini.png" alt="" />
+            <div class="textTitle">
+                <h1>Clean 3000</h1>
+                <p>Bonjour cher collaborateur 👋</p>
+            </div>
 
-        <h1>Choisissez - Client</h1>
+        </div>
 
-        <div>
+
+        <h2>Choisissez votre Client</h2>
+
+        <div id="clientsList">
             <a href="" class="client1">Jardins d'Ariana</a>
             <a href="" class="client2">Jérôme Livran</a>
             <a href="" class="client3">Philippe Parguey</a>
             <a href="" class="client4">Archimed</a>
             <a href="" class="client5">BeCom</a>
-
-            <a href="index.html">Editer</a>
-
-
+            <a href="index.html" class="edit">Editer</a>
         </div>
     </header>
 
-    <section id="AvisP">
-        <h2>Avis de passage</h2>
-        <p>Nom entreprise/ou client:
-        <p id="clientName"></p>
-        </p>
-        <p>Notre technicien est intervenu pour l'entretien de la vitrerie le
-        <p id="dateNow"></p>
-        </p>
-        <p>Merci de votre confiance.</p>
-        <p>Signature du technicien:</p>
-        <textarea name="" id="technSign" cols="30" rows="5"></textarea>
+    <section id="avisP">
+        <div class="container">
+            <h2>Avis de passage</h2>
+            <p>Nom entreprise/ou client :
+            <p id="clientName"></p>
+            </p>
+            <p>Notre technicien est intervenu pour l'entretien de la vitrerie le
+            <p id="dateNow"></p>
+            </p>
+            <p>Observations : </p>
+            <textarea name="observ" id="observ" rows="4"></textarea>
+            <p>Merci de votre confiance.</p>
+            <p>Signature du technicien:</p>
+            <textarea name="technSign" id="technSign" rows="2"></textarea>
 
-        <p>Signature du client/Cachet de l'entreprise:</p>
-        <textarea name="" id="clientSign" cols="30" rows="5"></textarea>
+            <p>Signature du client/Cachet de l'entreprise :</p>
+            <textarea name="clientSign" id="clientSign" rows="2"></textarea>
+            <div class="buttons">
+                <a onclick="window.print('#avisP')">Enregistrer votre avis</a>
+                <a href="index.html" class="edit">Editer</a>
+            </div>
+        </div>
+
     </section>
 
-    <a onclick="window.print('#AvisP')">Enregistrer votre avis</a>
+
     <script src="js/main.js"></script>
 </body>
 

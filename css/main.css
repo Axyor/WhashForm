@@ -1,3 +1,230 @@
+html {
+  font-size: 62.5%;
+}
+html body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+html body header {
+  height: 100vh;
+  padding: 2rem;
+  background-color: white;
+  margin-top: auto;
+}
+html body header .title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #3d3d33;
+}
+html body header .title img {
+  width: 20rem;
+}
+html body header .title .textTitle {
+  display: flex;
+  flex-direction: column;
+}
+html body header .title .textTitle h1 {
+  align-self: center;
+  color: #3d3d33;
+  font-family: "Lobster Two", cursive;
+}
+html body header .title .textTitle p {
+  font-size: 2.2rem;
+}
+html body header h2 {
+  font-size: 2.2rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #3d3d33;
+  font-family: "Montserrat", sans-serif;
+}
+html body header #clientsList {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+html body header #clientsList a {
+  text-align: center;
+  background-color: #3d3d33;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+html body header #clientsList .edit {
+  background-color: #5cba47;
+}
+html body #avisP .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+  background-color: white;
+  margin-top: auto;
+  font-size: 1.8rem;
+}
+html body #avisP .container h2 {
+  margin: 1rem 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #3d3d33;
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+html body #avisP .container p {
+  margin: 1rem 0;
+}
+html body #avisP .container textarea {
+  resize: none;
+  outline: none;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+html body #avisP .container #clientName {
+  font-weight: bold;
+  margin: 0;
+}
+html body #avisP .container #dateNow {
+  font-weight: bold;
+  margin: 0;
+  height: 1.5rem;
+}
+html body #avisP .container .buttons {
+  margin: 5rem 0;
+  height: 2rem;
+}
+html body #avisP .container .buttons a {
+  text-align: center;
+  background-color: #3d3d33;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+html body #avisP .container .buttons .edit {
+  background-color: #5cba47;
+}
 
+@media screen and (min-width: 575px) and (max-width: 990px) {
+  html {
+    font-size: 62.5%;
+  }
+  html body {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  html body header {
+    font-size: 2.4rem;
+  }
+  html body header .title img {
+    width: 20rem;
+  }
+  html body header .title .textTitle {
+    display: flex;
+    flex-direction: column;
+  }
+  html body header .title .textTitle h1 {
+    align-self: center;
+    color: #3d3d33;
+    font-family: "Lobster Two", cursive;
+  }
+  html body header .title .textTitle p {
+    font-size: 2.4rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  html body header h2 {
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    background-color: #3d3d33;
+  }
+  html body header #clientsList {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  html body header #clientsList a {
+    text-align: center;
+    background-color: #3d3d33;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  html body header #clientsList .edit {
+    background-color: #5cba47;
+  }
+  html body #avisP .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    background-color: white;
+    margin-top: auto;
+    font-size: 1.8rem;
+  }
+  html body #avisP .container h2 {
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #3d3d33;
+  }
+  html body #avisP .container p {
+    margin: 1rem 0;
+    font-size: 2.4rem;
+  }
+  html body #avisP .container textarea {
+    margin: 1rem 0;
+    resize: none;
+    outline: none;
+    font-size: 2rem;
+  }
+  html body #avisP .container #clientName {
+    font-weight: bold;
+    margin: 0;
+  }
+  html body #avisP .container #dateNow {
+    font-weight: bold;
+    margin: 0;
+  }
+  html body #avisP .container .buttons {
+    margin: 5rem 0;
+    height: 2rem;
+  }
+  html body #avisP .container .buttons a {
+    text-align: center;
+    background-color: #3d3d33;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 2.2rem;
+  }
+  html body #avisP .container .buttons .edit {
+    background-color: #5cba47;
+  }
+}
+* {
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=main.css.map */

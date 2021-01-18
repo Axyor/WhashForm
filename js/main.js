@@ -50,9 +50,9 @@ client1Elements.addEventListener("click", () => {
     });
     dElement.textContent = date;
     console.log(dElement);
-    // let dateElement = document.querySelector("#clientList");
-    divElement.appendChild(dElement);
-
+    let dateElement = document.querySelector("#dateNow");
+    dateElement.appendChild(dElement);
+    window.scrollTo(0,document.body.scrollHeight);
 })
 
 client2Elements.addEventListener("click", () => {
@@ -80,7 +80,7 @@ client2Elements.addEventListener("click", () => {
     console.log(dElement);
     let dateElement = document.querySelector("#dateNow");
     dateElement.appendChild(dElement);
-
+    window.scrollTo(0,document.body.scrollHeight);
 })
 
 client3Elements.addEventListener("click", () => {
@@ -108,7 +108,7 @@ client3Elements.addEventListener("click", () => {
     console.log(dElement);
     let dateElement = document.querySelector("#dateNow");
     dateElement.appendChild(dElement);
-
+    window.scrollTo(0,document.body.scrollHeight);
 })
 
 client4Elements.addEventListener("click", () => {
@@ -136,7 +136,7 @@ client4Elements.addEventListener("click", () => {
     console.log(dElement);
     let dateElement = document.querySelector("#dateNow");
     dateElement.appendChild(dElement);
-
+    window.scrollTo(0,document.body.scrollHeight);
 })
 
 client5Elements.addEventListener("click", () => {
@@ -164,7 +164,7 @@ client5Elements.addEventListener("click", () => {
     console.log(dElement);
     let dateElement = document.querySelector("#dateNow");
     dateElement.appendChild(dElement);
-
+    window.scrollTo(0,document.body.scrollHeight);
     
 
 });

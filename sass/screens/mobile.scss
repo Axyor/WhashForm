@@ -1,0 +1,124 @@
+html {
+    font-size: 62.5%;
+    body {
+        margin: 0;
+        font-size: 1.6rem;
+        header {
+            height: 100vh;
+            padding: 2rem;
+            background-color: white;
+            margin-top: auto;
+            .title {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                color: #3d3d33;
+                img {
+                    width: 20rem;
+                }
+                .textTitle {
+                    display: flex;
+                    flex-direction: column;
+                    h1 {
+                        align-self: center;
+                        color: #3d3d33;
+                        font-family: 'Lobster Two', cursive;
+                    }
+                    p {
+                        font-size: 2.2rem;
+                        
+                    }
+                }
+            }
+            h2 {
+                font-size: 2.2rem;
+                margin: 1rem 0;
+                padding: 1rem;
+                text-align: center;
+                color: white;
+                background-color: #3d3d33;
+                font-family: 'Montserrat', sans-serif
+            }
+            #clientsList {
+                margin: 1rem 0;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                a {
+                    text-align: center;
+                    background-color: #3d3d33;
+                    border-radius: 1rem;
+                    color: white;
+                    text-decoration: none;
+                    margin: 1rem;
+                    padding: 1rem;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .edit {
+                    background-color: #5cba47;
+                }
+            }
+        }
+
+        #avisP {
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                padding: 2rem;
+                background-color: white;
+                margin-top: auto;
+                font-size: 1.8rem;
+                h2 {
+                    margin: 1rem 0;
+                    padding: 1rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: white;
+                    background-color: #3d3d33;
+                    font-size: 2.2rem;
+                    font-family: 'Montserrat', sans-serif
+                }
+                p{
+                    margin:1rem 0;
+                }
+
+                textarea{
+                    resize: none;
+                    outline: none;
+                    font-size: 1.8rem;
+                    margin:1rem 0;
+                }
+                #clientName {
+                    font-weight: bold;
+                    margin: 0;
+                    
+                }
+
+                #dateNow {
+                    font-weight: bold;
+                    margin: 0;
+                    height: 1.5rem;
+                }
+                .buttons {
+                    margin:5rem 0;
+                    height: 2rem;
+                    a {
+                        text-align: center;
+                        background-color: #3d3d33;
+                        border-radius: 1rem;
+                        color: white;
+                        text-decoration: none;
+                        margin: 1rem;
+                        padding: 1rem;
+                        font-family: 'Montserrat', sans-serif
+                    }
+                    .edit {
+                        background-color: #5cba47;
+                    }
+                }
+            }
+        }
+    }
+}
