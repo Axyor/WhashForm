@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+$json = file_get_contents("clients.json");
+$clients = json_decode($json, true);
+
+?>
 <html lang="fr">
 
 <head>
@@ -7,14 +12,13 @@
     <title>Clean 3000</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="title">
-            <img src="/img/logo-clean3000-mini.png" alt="" />
+            <img src="./img/logo-clean3000-mini.png" alt="" />
             <div class="textTitle">
                 <h1>Clean 3000</h1>
                 <p>Bonjour cher collaborateur 👋</p>
@@ -26,12 +30,15 @@
         <h2>Choisissez votre Client</h2>
 
         <div id="clientsList">
-            <a href="" class="client1">Jardins d'Ariana</a>
-            <a href="" class="client2">Jérôme Livran</a>
-            <a href="" class="client3">Philippe Parguey</a>
-            <a href="" class="client4">Archimed</a>
-            <a href="" class="client5">BeCom</a>
-            <a href="index.html" class="edit">Editer</a>
+            <?php
+
+            foreach ($clients as $client) {
+            ?>
+                <a href="" id="<?= $client["id"]; ?>" class="client"><?= $client["name"]; ?></a>
+            <?php
+            }
+            ?>
+            <a href="index.php" class="edit">Editer</a>
         </div>
     </header>
 
@@ -54,14 +61,14 @@
             <textarea name="clientSign" id="clientSign" rows="2"></textarea>
             <div class="buttons">
                 <a onclick="window.print('#avisP')">Enregistrer votre avis</a>
-                <a href="index.html" class="edit">Editer</a>
+                <a href="index.php" class="edit">Editer</a>
             </div>
         </div>
 
     </section>
 
 
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
